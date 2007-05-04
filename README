@@ -32,15 +32,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gimp2-sharp-0.11-X-src.tar.bz2
+  unpack gimp2-sharp-0.12-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gimp2-sharp-0.11-X.cygport all
+  cygport ./gimp2-sharp-0.12-X.cygport all
 
 This will create:
-  /usr/src/gimp2-sharp-0.11-X-src.tar.bz2
-  /usr/src/gimp2-sharp-0.11-X.tar.bz2
+  /usr/src/gimp2-sharp-0.12-X-src.tar.bz2
+  /usr/src/gimp2-sharp-0.12-X.tar.bz2
 
 -------------------------------------------
 
@@ -57,6 +57,8 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/plug-ins/Fragment.exe
   /usr/lib/gimp/2.0/plug-ins/KoalaPaint
   /usr/lib/gimp/2.0/plug-ins/KoalaPaint.exe
+  /usr/lib/gimp/2.0/plug-ins/Mezzotint
+  /usr/lib/gimp/2.0/plug-ins/Mezzotint.exe
   /usr/lib/gimp/2.0/plug-ins/Ministeck
   /usr/lib/gimp/2.0/plug-ins/Ministeck.exe
   /usr/lib/gimp/2.0/plug-ins/PhotoshopActions
@@ -90,14 +92,14 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/plug-ins/neo.exe
   /usr/lib/gimp/2.0/plug-ins/wbmp
   /usr/lib/gimp/2.0/plug-ins/wbmp.exe
-  /usr/share/doc/Cygwin/gimp2-sharp-0.11.README
-  /usr/share/doc/gimp2-sharp-0.11/AUTHORS
-  /usr/share/doc/gimp2-sharp-0.11/COPYING
-  /usr/share/doc/gimp2-sharp-0.11/ChangeLog
-  /usr/share/doc/gimp2-sharp-0.11/INSTALL
-  /usr/share/doc/gimp2-sharp-0.11/NEWS
-  /usr/share/doc/gimp2-sharp-0.11/README
-  /usr/share/doc/gimp2-sharp-0.11/TODO
+  /usr/share/doc/Cygwin/gimp2-sharp-0.12.README
+  /usr/share/doc/gimp2-sharp-0.12/AUTHORS
+  /usr/share/doc/gimp2-sharp-0.12/COPYING
+  /usr/share/doc/gimp2-sharp-0.12/ChangeLog
+  /usr/share/doc/gimp2-sharp-0.12/INSTALL
+  /usr/share/doc/gimp2-sharp-0.12/NEWS
+  /usr/share/doc/gimp2-sharp-0.12/README
+  /usr/share/doc/gimp2-sharp-0.12/TODO
   /usr/share/locale/en/LC_MESSAGES/AverageBlur.mo
   /usr/share/locale/en/LC_MESSAGES/DifferenceClouds.mo
   /usr/share/locale/en/LC_MESSAGES/Forge.mo
@@ -184,6 +186,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.12-1 -----
+Version bump.
 
 ----- version 0.11-1 -----
 Version bump.
