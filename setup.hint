@@ -1,4 +1,4 @@
 category: Dotnet Gnome Graphics
-requires: cygwin gimp2 gtk-sharp2 mono
+requires: cygwin gimp2 glib-sharp2 gtk-sharp2 mono
 sdesc: "Mono C# GIMP bindings and plugins"
 ldesc: "Mono C# GIMP bindings and plugins"
