@@ -3,22 +3,19 @@ gimp2-sharp
 Mono C# GIMP bindings and plugins
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  gimp2-2.4.3-1
-  glib-sharp2-2.10.2-1
-  gtk-sharp2-2.10.2-1
-  mono-1.2.5-1
+  gimp2-2.4.5-1
+  glib-sharp2-2.10.3-1
+  gtk-sharp2-2.10.3-1
+  mono-1.9.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.7-1
-  gawk-3.1.5-4
-  ikvm-0.34.0.2-1
-  libtool1.5-1.5.23a-2
+  cygport-0.3.9-1
+  gawk-3.1.6-1
+  libtool-2.2.2-2
   make-3.81-1
   pkg-config-0.20-1
   sed-4.1.5-1
@@ -32,15 +29,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gimp2-sharp-0.13-X-src.tar.bz2
+  unpack gimp2-sharp-0.14-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gimp2-sharp-0.13-X.cygport all
+  cygport ./gimp2-sharp-0.14-X.cygport all
 
 This will create:
-  /usr/src/gimp2-sharp-0.13-X-src.tar.bz2
-  /usr/src/gimp2-sharp-0.13-X.tar.bz2
+  /usr/src/gimp2-sharp-0.14-X-src.tar.bz2
+  /usr/src/gimp2-sharp-0.14-X.tar.bz2
 
 -------------------------------------------
 
@@ -60,6 +57,7 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/csharp/Pointillize.exe
   /usr/lib/gimp/2.0/csharp/Raindrops.exe
   /usr/lib/gimp/2.0/csharp/Shatter.exe
+  /usr/lib/gimp/2.0/csharp/Sky.exe
   /usr/lib/gimp/2.0/csharp/SliceTool.exe
   /usr/lib/gimp/2.0/csharp/Splitter.exe
   /usr/lib/gimp/2.0/csharp/Swirlies.exe
@@ -85,6 +83,7 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/plug-ins/Pointillize
   /usr/lib/gimp/2.0/plug-ins/Raindrops
   /usr/lib/gimp/2.0/plug-ins/Shatter
+  /usr/lib/gimp/2.0/plug-ins/Sky
   /usr/lib/gimp/2.0/plug-ins/SliceTool
   /usr/lib/gimp/2.0/plug-ins/Splitter
   /usr/lib/gimp/2.0/plug-ins/Swirlies
@@ -93,13 +92,13 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/plug-ins/ncp
   /usr/lib/gimp/2.0/plug-ins/neo
   /usr/lib/gimp/2.0/plug-ins/wbmp
-  /usr/share/doc/gimp2-sharp-0.13/AUTHORS
-  /usr/share/doc/gimp2-sharp-0.13/COPYING
-  /usr/share/doc/gimp2-sharp-0.13/ChangeLog
-  /usr/share/doc/gimp2-sharp-0.13/INSTALL
-  /usr/share/doc/gimp2-sharp-0.13/NEWS
-  /usr/share/doc/gimp2-sharp-0.13/README
-  /usr/share/doc/gimp2-sharp-0.13/TODO
+  /usr/share/doc/gimp2-sharp-0.14/AUTHORS
+  /usr/share/doc/gimp2-sharp-0.14/COPYING
+  /usr/share/doc/gimp2-sharp-0.14/ChangeLog
+  /usr/share/doc/gimp2-sharp-0.14/INSTALL
+  /usr/share/doc/gimp2-sharp-0.14/NEWS
+  /usr/share/doc/gimp2-sharp-0.14/README
+  /usr/share/doc/gimp2-sharp-0.14/TODO
   /usr/share/locale/en/LC_MESSAGES/AverageBlur.mo
   /usr/share/locale/en/LC_MESSAGES/DifferenceClouds.mo
   /usr/share/locale/en/LC_MESSAGES/Forge.mo
@@ -186,6 +185,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.14-1 -----
+Version bump.
 
 ----- version 0.13-1 -----
 Version bump.
