@@ -4,8 +4,8 @@ Mono C# GIMP bindings and plugins
 
 Runtime requirements:
   gimp2-2.4.5-1
-  glib-sharp2-2.10.3-1
-  gtk-sharp2-2.10.3-1
+  glib-sharp2-2.12.1-1
+  gtk-sharp2-2.12.1-1
   mono-1.9.1-1
 
 Build requirements:
@@ -13,7 +13,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.3.9-1
+  cygport-0.3.10-1
   gawk-3.1.6-1
   libtool-2.2.2-2
   make-3.81-1
@@ -29,15 +29,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gimp2-sharp-0.14-X-src.tar.bz2
+  unpack gimp2-sharp-0.15-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gimp2-sharp-0.14-X.cygport all
+  cygport ./gimp2-sharp-0.15-X.cygport all
 
 This will create:
-  /usr/src/gimp2-sharp-0.14-X-src.tar.bz2
-  /usr/src/gimp2-sharp-0.14-X.tar.bz2
+  /usr/src/gimp2-sharp-0.15-X-src.tar.bz2
+  /usr/src/gimp2-sharp-0.15-X.tar.bz2
 
 -------------------------------------------
 
@@ -48,6 +48,7 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/csharp/DifferenceClouds.exe
   /usr/lib/gimp/2.0/csharp/Forge.exe
   /usr/lib/gimp/2.0/csharp/Fragment.exe
+  /usr/lib/gimp/2.0/csharp/GemImg.exe
   /usr/lib/gimp/2.0/csharp/KoalaPaint.exe
   /usr/lib/gimp/2.0/csharp/Mezzotint.exe
   /usr/lib/gimp/2.0/csharp/Ministeck.exe
@@ -74,6 +75,7 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/plug-ins/DifferenceClouds
   /usr/lib/gimp/2.0/plug-ins/Forge
   /usr/lib/gimp/2.0/plug-ins/Fragment
+  /usr/lib/gimp/2.0/plug-ins/GemImg
   /usr/lib/gimp/2.0/plug-ins/KoalaPaint
   /usr/lib/gimp/2.0/plug-ins/Mezzotint
   /usr/lib/gimp/2.0/plug-ins/Ministeck
@@ -92,13 +94,13 @@ Files included in the binary package:
   /usr/lib/gimp/2.0/plug-ins/ncp
   /usr/lib/gimp/2.0/plug-ins/neo
   /usr/lib/gimp/2.0/plug-ins/wbmp
-  /usr/share/doc/gimp2-sharp-0.14/AUTHORS
-  /usr/share/doc/gimp2-sharp-0.14/COPYING
-  /usr/share/doc/gimp2-sharp-0.14/ChangeLog
-  /usr/share/doc/gimp2-sharp-0.14/INSTALL
-  /usr/share/doc/gimp2-sharp-0.14/NEWS
-  /usr/share/doc/gimp2-sharp-0.14/README
-  /usr/share/doc/gimp2-sharp-0.14/TODO
+  /usr/share/doc/gimp2-sharp-0.15/AUTHORS
+  /usr/share/doc/gimp2-sharp-0.15/COPYING
+  /usr/share/doc/gimp2-sharp-0.15/ChangeLog
+  /usr/share/doc/gimp2-sharp-0.15/INSTALL
+  /usr/share/doc/gimp2-sharp-0.15/NEWS
+  /usr/share/doc/gimp2-sharp-0.15/README
+  /usr/share/doc/gimp2-sharp-0.15/TODO
   /usr/share/locale/en/LC_MESSAGES/AverageBlur.mo
   /usr/share/locale/en/LC_MESSAGES/DifferenceClouds.mo
   /usr/share/locale/en/LC_MESSAGES/Forge.mo
@@ -185,6 +187,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.15-1 -----
+Version bump.
 
 ----- version 0.14-1 -----
 Version bump.
