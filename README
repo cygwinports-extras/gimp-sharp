@@ -3,22 +3,24 @@ gimp2-sharp
 Mono C# GIMP bindings and plugins
 
 Runtime requirements:
-  gimp2-2.4.5-1
-  glib-sharp2-2.12.1-1
-  gtk-sharp2-2.12.1-1
-  mono-1.9.1-1
+  gimp2-2.6.7-1
+  libglib2.0_0-2.22.2-1
+  mono-2.4.3.1-1
+  mono-glib-sharp2.0-2.12.9-1
+  mono-gtk-sharp2.0-2.12.9-1
+  mono-pango-sharp2.0-2.12.9-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.9-1.9.6-2
-  binutils-20060817-1
-  cygport-0.3.10-1
-  gawk-3.1.6-1
-  libtool-2.2.2-2
-  make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  autoconf2.5-2.65-1
+  automake1.9-1.9.6-10
+  cygport-0.9.80-1
+  gawk-3.1.7-1
+  gettext-devel-0.17-11
+  libtool-2.2.7a-15
+  make-3.81-2
+  pkg-config-0.23b-10
+  sed-4.1.5-2
 
 Canonical website:
   http://gimp-sharp.sourceforge.net/
@@ -41,170 +43,10 @@ This will create:
 
 -------------------------------------------
 
-Files included in the binary package:
-
-  /usr/lib/gimp/2.0/csharp/AverageBlur.exe
-  /usr/lib/gimp/2.0/csharp/CountTool.exe
-  /usr/lib/gimp/2.0/csharp/DifferenceClouds.exe
-  /usr/lib/gimp/2.0/csharp/Forge.exe
-  /usr/lib/gimp/2.0/csharp/Fragment.exe
-  /usr/lib/gimp/2.0/csharp/GemImg.exe
-  /usr/lib/gimp/2.0/csharp/KoalaPaint.exe
-  /usr/lib/gimp/2.0/csharp/Mezzotint.exe
-  /usr/lib/gimp/2.0/csharp/Ministeck.exe
-  /usr/lib/gimp/2.0/csharp/PhotoshopActions.exe
-  /usr/lib/gimp/2.0/csharp/PictureFrame.exe
-  /usr/lib/gimp/2.0/csharp/PicturePackage.exe
-  /usr/lib/gimp/2.0/csharp/Pointillize.exe
-  /usr/lib/gimp/2.0/csharp/Raindrops.exe
-  /usr/lib/gimp/2.0/csharp/Shatter.exe
-  /usr/lib/gimp/2.0/csharp/Sky.exe
-  /usr/lib/gimp/2.0/csharp/SliceTool.exe
-  /usr/lib/gimp/2.0/csharp/Splitter.exe
-  /usr/lib/gimp/2.0/csharp/Swirlies.exe
-  /usr/lib/gimp/2.0/csharp/UnitTest.exe
-  /usr/lib/gimp/2.0/csharp/UpdateCheck.exe
-  /usr/lib/gimp/2.0/csharp/gimp-sharp.dll
-  /usr/lib/gimp/2.0/csharp/gimp-sharp.dll.config
-  /usr/lib/gimp/2.0/csharp/gimptest.dll
-  /usr/lib/gimp/2.0/csharp/ncp.exe
-  /usr/lib/gimp/2.0/csharp/neo.exe
-  /usr/lib/gimp/2.0/csharp/wbmp.exe
-  /usr/lib/gimp/2.0/plug-ins/AverageBlur
-  /usr/lib/gimp/2.0/plug-ins/CountTool
-  /usr/lib/gimp/2.0/plug-ins/DifferenceClouds
-  /usr/lib/gimp/2.0/plug-ins/Forge
-  /usr/lib/gimp/2.0/plug-ins/Fragment
-  /usr/lib/gimp/2.0/plug-ins/GemImg
-  /usr/lib/gimp/2.0/plug-ins/KoalaPaint
-  /usr/lib/gimp/2.0/plug-ins/Mezzotint
-  /usr/lib/gimp/2.0/plug-ins/Ministeck
-  /usr/lib/gimp/2.0/plug-ins/PhotoshopActions
-  /usr/lib/gimp/2.0/plug-ins/PictureFrame
-  /usr/lib/gimp/2.0/plug-ins/PicturePackage
-  /usr/lib/gimp/2.0/plug-ins/Pointillize
-  /usr/lib/gimp/2.0/plug-ins/Raindrops
-  /usr/lib/gimp/2.0/plug-ins/Shatter
-  /usr/lib/gimp/2.0/plug-ins/Sky
-  /usr/lib/gimp/2.0/plug-ins/SliceTool
-  /usr/lib/gimp/2.0/plug-ins/Splitter
-  /usr/lib/gimp/2.0/plug-ins/Swirlies
-  /usr/lib/gimp/2.0/plug-ins/UnitTest
-  /usr/lib/gimp/2.0/plug-ins/UpdateCheck
-  /usr/lib/gimp/2.0/plug-ins/ncp
-  /usr/lib/gimp/2.0/plug-ins/neo
-  /usr/lib/gimp/2.0/plug-ins/wbmp
-  /usr/share/doc/gimp2-sharp-0.15/AUTHORS
-  /usr/share/doc/gimp2-sharp-0.15/COPYING
-  /usr/share/doc/gimp2-sharp-0.15/ChangeLog
-  /usr/share/doc/gimp2-sharp-0.15/INSTALL
-  /usr/share/doc/gimp2-sharp-0.15/NEWS
-  /usr/share/doc/gimp2-sharp-0.15/README
-  /usr/share/doc/gimp2-sharp-0.15/TODO
-  /usr/share/locale/en/LC_MESSAGES/AverageBlur.mo
-  /usr/share/locale/en/LC_MESSAGES/DifferenceClouds.mo
-  /usr/share/locale/en/LC_MESSAGES/Forge.mo
-  /usr/share/locale/en/LC_MESSAGES/Fragment.mo
-  /usr/share/locale/en/LC_MESSAGES/KoalaPaint.mo
-  /usr/share/locale/en/LC_MESSAGES/Ministeck.mo
-  /usr/share/locale/en/LC_MESSAGES/PicturePackage.mo
-  /usr/share/locale/en/LC_MESSAGES/Pointillize.mo
-  /usr/share/locale/en/LC_MESSAGES/Raindrops.mo
-  /usr/share/locale/en/LC_MESSAGES/SliceTool.mo
-  /usr/share/locale/en/LC_MESSAGES/Splitter.mo
-  /usr/share/locale/en/LC_MESSAGES/Swirlies.mo
-  /usr/share/locale/en/LC_MESSAGES/UpdateCheck.mo
-  /usr/share/locale/en/LC_MESSAGES/ncp.mo
-  /usr/share/locale/en/LC_MESSAGES/neo.mo
-  /usr/share/locale/en/LC_MESSAGES/wbmp.mo
-  /usr/share/locale/fr/LC_MESSAGES/AverageBlur.mo
-  /usr/share/locale/fr/LC_MESSAGES/DifferenceClouds.mo
-  /usr/share/locale/fr/LC_MESSAGES/Forge.mo
-  /usr/share/locale/fr/LC_MESSAGES/Fragment.mo
-  /usr/share/locale/fr/LC_MESSAGES/KoalaPaint.mo
-  /usr/share/locale/fr/LC_MESSAGES/Ministeck.mo
-  /usr/share/locale/fr/LC_MESSAGES/PicturePackage.mo
-  /usr/share/locale/fr/LC_MESSAGES/Pointillize.mo
-  /usr/share/locale/fr/LC_MESSAGES/Raindrops.mo
-  /usr/share/locale/fr/LC_MESSAGES/SliceTool.mo
-  /usr/share/locale/fr/LC_MESSAGES/Splitter.mo
-  /usr/share/locale/fr/LC_MESSAGES/Swirlies.mo
-  /usr/share/locale/fr/LC_MESSAGES/UpdateCheck.mo
-  /usr/share/locale/fr/LC_MESSAGES/ncp.mo
-  /usr/share/locale/fr/LC_MESSAGES/neo.mo
-  /usr/share/locale/fr/LC_MESSAGES/wbmp.mo
-  /usr/share/locale/he/LC_MESSAGES/AverageBlur.mo
-  /usr/share/locale/he/LC_MESSAGES/DifferenceClouds.mo
-  /usr/share/locale/he/LC_MESSAGES/Forge.mo
-  /usr/share/locale/he/LC_MESSAGES/Fragment.mo
-  /usr/share/locale/he/LC_MESSAGES/KoalaPaint.mo
-  /usr/share/locale/he/LC_MESSAGES/Ministeck.mo
-  /usr/share/locale/he/LC_MESSAGES/PicturePackage.mo
-  /usr/share/locale/he/LC_MESSAGES/Pointillize.mo
-  /usr/share/locale/he/LC_MESSAGES/Raindrops.mo
-  /usr/share/locale/he/LC_MESSAGES/SliceTool.mo
-  /usr/share/locale/he/LC_MESSAGES/Splitter.mo
-  /usr/share/locale/he/LC_MESSAGES/Swirlies.mo
-  /usr/share/locale/he/LC_MESSAGES/UpdateCheck.mo
-  /usr/share/locale/he/LC_MESSAGES/ncp.mo
-  /usr/share/locale/he/LC_MESSAGES/neo.mo
-  /usr/share/locale/he/LC_MESSAGES/wbmp.mo
-  /usr/share/locale/it/LC_MESSAGES/AverageBlur.mo
-  /usr/share/locale/it/LC_MESSAGES/DifferenceClouds.mo
-  /usr/share/locale/it/LC_MESSAGES/Forge.mo
-  /usr/share/locale/it/LC_MESSAGES/Fragment.mo
-  /usr/share/locale/it/LC_MESSAGES/KoalaPaint.mo
-  /usr/share/locale/it/LC_MESSAGES/Ministeck.mo
-  /usr/share/locale/it/LC_MESSAGES/PicturePackage.mo
-  /usr/share/locale/it/LC_MESSAGES/Pointillize.mo
-  /usr/share/locale/it/LC_MESSAGES/Raindrops.mo
-  /usr/share/locale/it/LC_MESSAGES/SliceTool.mo
-  /usr/share/locale/it/LC_MESSAGES/Splitter.mo
-  /usr/share/locale/it/LC_MESSAGES/Swirlies.mo
-  /usr/share/locale/it/LC_MESSAGES/UpdateCheck.mo
-  /usr/share/locale/it/LC_MESSAGES/ncp.mo
-  /usr/share/locale/it/LC_MESSAGES/neo.mo
-  /usr/share/locale/it/LC_MESSAGES/wbmp.mo
-  /usr/share/locale/nl/LC_MESSAGES/Raindrops.mo
-  /usr/share/locale/nl/LC_MESSAGES/ncp.mo
-  /usr/share/locale/ru/LC_MESSAGES/AverageBlur.mo
-  /usr/share/locale/ru/LC_MESSAGES/DifferenceClouds.mo
-  /usr/share/locale/ru/LC_MESSAGES/Forge.mo
-  /usr/share/locale/ru/LC_MESSAGES/Fragment.mo
-  /usr/share/locale/ru/LC_MESSAGES/KoalaPaint.mo
-  /usr/share/locale/ru/LC_MESSAGES/Ministeck.mo
-  /usr/share/locale/ru/LC_MESSAGES/PicturePackage.mo
-  /usr/share/locale/ru/LC_MESSAGES/Pointillize.mo
-  /usr/share/locale/ru/LC_MESSAGES/Raindrops.mo
-  /usr/share/locale/ru/LC_MESSAGES/SliceTool.mo
-  /usr/share/locale/ru/LC_MESSAGES/Splitter.mo
-  /usr/share/locale/ru/LC_MESSAGES/Swirlies.mo
-  /usr/share/locale/ru/LC_MESSAGES/UpdateCheck.mo
-  /usr/share/locale/ru/LC_MESSAGES/ncp.mo
-  /usr/share/locale/ru/LC_MESSAGES/neo.mo
-  /usr/share/locale/ru/LC_MESSAGES/wbmp.mo
-
-------------------
-
 Port Notes:
 
------ version 0.15-1 -----
-Version bump.
-
------ version 0.14-1 -----
-Version bump.
-
------ version 0.13-1 -----
-Version bump.
-
------ version 0.12-1 -----
-Version bump.
-
------ version 0.11-1 -----
-Version bump.
-
------ version 0.10-1 -----
-Initial release for Cygwin.
+----- version 0.15-2 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

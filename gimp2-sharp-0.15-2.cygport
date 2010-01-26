@@ -1,0 +1,44 @@
+inherit mono
+
+DESCRIPTION="Gimp C# plugins"
+HOMEPAGE="http://gimp-sharp.sourceforge.net/"
+SRC_URI="mirror://sourceforge/gimp-sharp/gimp-sharp-${PV}.tar.gz"
+SRC_DIR="gimp-sharp-${PV}"
+
+PATCH_URI="0.15-dllmap-cygwin.patch"
+
+src_compile() {
+	cd ${S}
+	cygautoreconf
+	lndirs
+	cd ${B}
+	cygconf --with-incomplete
+	# CSC_FLAGS="-langversion:linq is an obsolete option
+	cygmake CSC_FLAGS=""
+}
+
+src_install() {
+	local csharpdir=$(gimptool-2.0 --gimpplugindir)/csharp
+	local plugindir=$(gimptool-2.0 --gimpplugindir)/plug-ins
+
+	dodir ${csharpdir} ${plugindir}
+	dodir /usr/share/locale/{en,fr,he,it,nl,ru}/LC_MESSAGES
+
+	# 1) We do not want to install the .exe files into /plug-ins, as the
+	#    GIMP will take them as native plugins and execute them as such;
+	#    doing so will cause them to be run by .NET instead of Mono,
+	#    leading to crashes
+	# 2) We install the assemblies and data, but not the wrapper scripts
+	#    as we can't have w/ and w/o .exe in the same directory
+	cd ${B}
+	cyginstall \
+		INSTALL=: INSTALL_DATA="/usr/bin/install -m 0644" \
+		GIMPLOCALE=${D}/usr/share/locale GIMPPLUGINDIR=${csharpdir}
+
+	pushd ${D}${csharpdir}
+	for x in *.exe
+	do
+		mono_wrapper ${plugindir}/${x%.exe} ${csharpdir}/${x}
+	done
+	popd
+}
