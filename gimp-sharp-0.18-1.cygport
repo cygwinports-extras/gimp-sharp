@@ -1,9 +1,13 @@
 inherit mono
 
-DESCRIPTION="Gimp C# plugins"
+CATEGORY="Graphics"
+SUMMARY="GIMP C# plugins"
+DESCRIPTION="GIMP# fills the niche between scripting languages (easy to
+write, slow) and C (harder to write, fast). GIMP# is not as fast as C,
+but much faster than a scripting language. Building a decent GUI is much
+easier than in C."
 HOMEPAGE="http://gimp-sharp.sourceforge.net/"
-SRC_URI="mirror://sourceforge/gimp-sharp/gimp-sharp-${PV}.tar.gz"
-SRC_DIR="gimp-sharp-${PV}"
+SRC_URI="mirror://sourceforge/gimp-sharp/${P}.tar.gz"
 
 PATCH_URI="0.15-dllmap-cygwin.patch"
 
@@ -12,9 +16,8 @@ src_compile() {
 	cygautoreconf
 	lndirs
 	cd ${B}
-	cygconf --with-incomplete
-	# CSC_FLAGS="-langversion:linq is an obsolete option
-	cygmake CSC_FLAGS=""
+	cygconf
+	cygmake
 }
 
 src_install() {
